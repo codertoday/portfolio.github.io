@@ -4,9 +4,11 @@ const skcounters=document.querySelectorAll(".counter span");
 const progressbars=document.querySelectorAll(".skills svg circle");
 const mlsection=document.querySelector(".milestones");
 const mlcounters=document.querySelectorAll(".number span");
-
+const links=document.querySelectorAll(".nav-link");
+const togglebtn=document.querySelector(".toggle-btn");
 
 window.addEventListener("scroll", () => {
+    activelink();
     if(!skillsplayed) skillsCounter();
     if(!mlplayed) mlCounters();
 })
@@ -77,3 +79,36 @@ function mlCounters(){
     },400);
     });
 }
+
+function activelink(){
+    let sections=document.querySelectorAll("section[id]");
+    let passedsections=Array.from(sections).map((sct,i) =>{
+        return {
+            y: sct.getBoundingClientRect().top - header.offsetHeight,
+            id: i,
+        };
+    }).filter(sct => sct.y <= 0);
+    
+    let currsectid= passedsections.at(-1).id;
+    links.forEach((l) => l.classList.remove("active"));
+    links[currsectid].classList.add("active");
+}
+
+activelink();
+let firsttheme=localStorage.getItem("dark");
+changetheme(+firsttheme);
+function changetheme(isDark){
+    if(isDark){
+        document.body.classList.add("dark");
+        togglebtn.classList.replace("uil-moon","uil-sun");
+        localStorage.setItem("dark",1);
+    }
+    else{
+        document.body.classList.remove("dark");
+        togglebtn.classList.replace("uil-sun","uil-moon");
+        localStorage.setItem("dark",0);
+    }
+}
+togglebtn.addEventListener("click",()=>{
+    changetheme(!document.body.classList.contains("dark"));
+})
