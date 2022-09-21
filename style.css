@@ -3,7 +3,7 @@
 
 /* Web theme*/
 :root{
-    --hue-1:120;
+    --hue-1:270;
     --hue-2:67;
     --main-color-1:hsl(var(--hue-1),80%,40%);
     --main-color-dark-1:hsl(var(--hue-1),69%,50%);
@@ -13,8 +13,8 @@
 }
 
 body{
-    --bg-color-1:hsl(var(--hue-1),100%,92%);
-    --bg-color:hsl(var(--hue-1),100%,95%);
+    --bg-color-1:hsl(var(--hue-1),90%,92%);
+    --bg-color:hsl(var(--hue-1),900%,95%);
     --bg-color-2:#fff;
     --bg-color-3:hsl(var(--hue-1),100%,98%);
     --bg-color-transparent:rgba(255,255,255,0.6);
@@ -222,27 +222,17 @@ header.scrolled.logo{
 .showcase-img{
     position: relative;
     width: 80%;
-    min-height: calc(100% + 200px);
-    background-image: linear-gradient(124deg, var(--main-color-1),var(--main-color-2));
-    margin-top: -120px;
-    border-radius: 0 0 80px 80px;
+    min-height: 600px;
+    background-image: linear-gradient(20deg, var(--main-color-1),var(--main-color-2));
+    margin-top: 10px;
+    border-radius: 600px 600px 600px 600px;
 }
 .showcase-img .person{
     position: absolute;
-    width: 65%;
-    bottom: 0%;
-    left: 10%;
+    width: 110%;
+    bottom: 20%;
+    left: -20%;
     transform: translateX(15%);
-}
-
-.showcase-area .circle{
-    position: absolute;
-    width: 250px;
-    left: 0;
-    top: 80%;
-    transform: translate(-50%,-5%);
-    opacity: 0.5;
-    transition:0.3s opacity;
 }
 
 .subheading{
