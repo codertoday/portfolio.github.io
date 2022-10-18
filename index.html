@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pranati's Portfolio Website</title>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="swatch.css" />
+		<link rel="stylesheet" type="text/css" href="styleswatch.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="modernizer.js"></script> 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -386,56 +392,53 @@
                             <p class="text">These are some skills which I have inherited from self-experiences and some which have been taught to me</p>                   
                         </div>
                     </div>
-                    <div class="skillswrap">
-                       <div class="skill">
-                        <div class="skprogress">
-                            <svg>
-                                <circle cx="75" cy="75" r="68"/>
-                            </svg>
-                            <h2 class="counter">
-                                <span data-target="55">0</span>%
-                            </h2>
-                        </div>
-                      
-                        <div class="sktitle">HTML</div>
-                        </div> 
-                        <div class="skill">
-                        <div class="skprogress">
-                            <svg>
-                                <circle cx="75" cy="75" r="68"/>
-                            </svg>
-                            <h2 class="counter">
-                                <span data-target="50">0</span>%
-                            </h2>
-                        </div>
-                        <div class="sktitle">CSS</div>
-                      </div> 
-                      <div class="skill">
-                        <div class="skprogress">
-                            <svg>
-                                <circle cx="75" cy="75" r="68"/>
-                            </svg>
-                            <h2 class="counter">
-                                <span data-target="65">0</span>%
-                            </h2>
-                        </div>
-                        <div class="sktitle">Python</div>
+                    <div>
+                      <div class="container">
+			
+                        <header>
+                          <nav class="codrops-demos">
+                            <a class="current-demo">Skills</a>
+                          </nav>
+                          
+                        </header>
+                        
+                        <section class="main">
+                        
+                          <div id="sb-container" class="sb-container">
+                          
+                            <div>
+                              <h4><span>JS</span></h4>
+                            </div>
+                            <div>
+                              <h4><span>CSS3</span></h4>
+                            </div>	
+                            <div>
+                              <h4><span>HTML5</span></h4>
+                            </div>	
+                            <div>
+                              <h4><span>Python</span></h4>
+                            </div>	
+                            <div>
+                              <h4><span>JAVA</span></h4>
+                            </div>	
+                            <div>
+                              <h4><span>C++</span></h4>
+                            </div>	
+                            <div>
+                              <h4><span>C</span></h4>											
+                            </div>	
+                            
+                            
+                          </div><!-- sb-container -->
+                          
+                        </section>
+                        
+                          </div>
                     </div>
-                    <div class="skill">
-                        <div class="skprogress">
-                            <svg>
-                                <circle cx="75" cy="75" r="68"/>
-                            </svg>
-                            <h2 class="counter">
-                                <span data-target="85">0</span>%
-                            </h2>
-                        </div>
-                        <div class="sktitle">Communication</div>
-                    </div>
-                    </div>
-
+              
+              
                 </div>
-            </div>
+              </div>
         </section>
 
         <section class="projects sections" id="projects">
@@ -447,10 +450,6 @@
                 I've done projects in all software domains.
               </p>
               <div class="milestones">
-                <div class="ml">
-                  <h2 class="number"><span data-target="3">0</span>+</h2>
-                  <h5>Projects</h5>
-                </div>
               </div>
             </div>
             <div class="projects-grid">
@@ -533,5 +532,14 @@
     </footer>
     <!-- JAVASCRIPT -->
     <script src="app.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="swatchbook.js"></script>
+		<script type="text/javascript">
+			$(function() {
+			
+				$( '#sb-container' ).swatchbook();
+			
+			});
+    </script>
 </body>
 </html>
