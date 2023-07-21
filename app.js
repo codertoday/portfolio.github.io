@@ -5,7 +5,7 @@ const progressbars = document.querySelectorAll(".skills svg circle");
 const mlsection = document.querySelector(".milestones");
 const mlcounters = document.querySelectorAll(".number span");
 const links = document.querySelectorAll(".nav-link");
-const togglebtn = document.querySelector(".toggle-btn");
+const togglebtn = document.querySelector("iconify-icon");
 
 window.addEventListener("scroll", () => {
     activelink();
@@ -110,11 +110,11 @@ changetheme(+firsttheme);
 function changetheme(isDark) {
     if (isDark) {
         document.body.classList.add("dark");
-        togglebtn.classList.replace("uil-moon", "uil-sun");
+        togglebtn.classList.replace("ph:moon-light", "ph:sun-light");
         localStorage.setItem("dark", 1);
     } else {
         document.body.classList.remove("dark");
-        togglebtn.classList.replace("uil-sun", "uil-moon");
+        togglebtn.classList.replace("ph:sun-light", "ph:moon-light");
         localStorage.setItem("dark", 0);
     }
 }

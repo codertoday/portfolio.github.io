@@ -39,11 +39,11 @@ body.dark .shape.circle{
     opacity: 0.7;
 }
 
-body.dark .toggle-btn{
+body.dark iconify-icon{
     background-color: var(--bg-color-3);
 }
 
-body.dark .toggle-btn:hover{
+body.dark iconify-icon:hover{
     background-color: brightness(110%);
 }
 
@@ -53,6 +53,10 @@ body.dark .nav-link:hover::after,body.dark .nav-link.active::after{
 
 body.dark .form-input:hover{
     filter: brightness(110%);
+}
+
+body.dark .btn2{
+    color:white;
 }
 
 *,
@@ -180,7 +184,7 @@ header.scrolled.logo{
     opacity: 0.2;
 }
 
-.toggle-btn{
+iconify-icon{
     color: var(--heading-color);
     min-width: 40px;
     height: 40px;
@@ -196,7 +200,7 @@ header.scrolled.logo{
     margin-right: 10rem;
 }
 
-.toggle-btn:hover{
+iconify-icon:hover{
     filter: brightness(97%);
 }
 
@@ -728,67 +732,7 @@ footer .socialmedia{
     color: var(--main-color-1);
 }
 
-@media (max-width:1000px) {
-    .subheading{
-        font-size: 0.75rem;
-    }
-
-    .heading{
-        font-size: 2rem;
-    }
-
-    .showcase-area .heading{
-        font-size: 2.7rem;
-    }
-
-    .text{
-        font-size: 0.84rem;
-        margin: 1.3rem 0;
-    }
-
-    .btn{
-        padding: 0.8rem 1.6rem;
-        font-size: 0.8rem;
-        min-width: 100px;
-        border-radius: 15px;
-    }
-    .btn2{
-        font-size: 0.85rem;
-    }
-
-    .form-input{
-        padding: 0.8rem 1.45rem;
-        border-radius: 15px;
-        font-size: 0.8rem;
-    }
-
-    .logo{
-        font-size: 1.45rem;
-    }
-
-    header .logo{
-        height: 100px;
-        line-height: 100px;
-    }
-
-    .nav-link{
-        font-size: 0.7rem;
-    }
-
-    .showcase-area{
-        padding: 100px 0;
-    }
-
-    .showcase-area .container{
-        grid-template-columns: 1fr 400px;
-        height: 450px;
-    }
-
-    .skillsbox{
-        padding: 4rem;
-    }
-
-    .skprogress{
-        transform: scale(0.85);
-    }
+body.dark .sociallink:hover{
+    color: white;
 }
+
